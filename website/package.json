@@ -2,8 +2,10 @@
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
+    "b": "yarn build",
     "build": "docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",
+    "d": "./deploy.sh",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version"
