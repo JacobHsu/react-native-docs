@@ -1,6 +1,7 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
+    "s": "yarn start",
     "start": "docusaurus-start",
     "b": "yarn build",
     "build": "docusaurus-build",

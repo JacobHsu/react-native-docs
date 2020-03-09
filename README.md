@@ -31,4 +31,41 @@ const siteConfig = {
   organizationName: 'jacobhsu',
 ```
 
-`$ GIT_USER=jacobhsu CURRENT_BRANCH=master USE_SSH=true yarn run publish-gh-pages`
+`$ GIT_USER=jacobhsu CURRENT_BRANCH=master USE_SSH=true yarn run publish-gh-pages`  
+`$ yarn b`  
+`$ yarn d`  
+
+## pre code
+
+```js
+  highlight: {
+    // default, Highlight.js theme to use for syntax highlighting in code blocks.
+    theme: 'solarized-dark',
+  },
+```
+
+website\static\css\syntax.css
+
+## debug
+
+Error: Processing the following `doc` field in `headerLinks` within `siteConfig.js`: 'gettin
+g-started' It looks like there is no document with that id that exists in your docs director
+y. Please double check the spelling of your `doc` field and the `id` fields of your docs.
+ 
+```js
+---
+id: getting-started #fixed
+title: Getting Started
+original_id: getting-started
+---
+```
+
+website\versioned_docs\version-0.61\getting-started.md
+
+```js
+---
+id: version-0.61-getting-started
+title: Getting Started
+original_id: getting-started
+---
+```

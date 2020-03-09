@@ -1,6 +1,16 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
+    "The Basics": [
+      "getting-started",
+      "intro-react-native-components",
+      "intro-react",
+      "handling-text-input",
+      "using-a-scrollview",
+      "using-a-listview",
+      "troubleshooting",
+      "platform-specific-code",
+      "more-resources"
+    ],
     "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },

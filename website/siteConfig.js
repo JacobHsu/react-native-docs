@@ -14,20 +14,23 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
-    infoLink: 'https://www.facebook.com',
+    image: '/react-native-docs/img/undraw_open_source.svg',
+    infoLink: 'https://docusaurus.io/docs/zh-CN/site-config',
     pinned: true,
   },
 ];
 
+const baseUrl = '/react-native-docs/';
+const repoUrl = 'https://github.com/jacobhsu/react-native-docs';
 const siteConfig = {
   title: 'React Native Docs', // Title for your website.
   tagline: 'A framework for building native apps using React',
   url: 'https://jacobhsu.github.io', // Your website URL
-  baseUrl: '/react-native-docs/', // Base URL for your project */
+  baseUrl, // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
+  repoUrl,
 
   // Used for publishing and more
   projectName: 'react-native-docs',
@@ -38,7 +41,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'getting-started', label: 'Docs'},
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
@@ -54,8 +57,18 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#8b0046',
-    secondaryColor: '#610031',
+    brand: '#61dafb', // electric blue
+    dark: '#282c34', // dark blue
+    deepdark: '#20232a', // really dark blue
+    light: '#373940', // light blue
+    text: '#1a1a1a', // black substitute
+    subtle: '#6d6d6d', // light grey for text
+    divider: '#ececec', // very light grey
+    tintColor: '#f7f7f7', // slightly off white
+    backgroundColor: 'white',
+    // we don't use these any more but docusaurus complains if we don't
+    primaryColor: 'black',
+    secondaryColor: 'gray',
   },
 
   /* Custom fonts for website */
@@ -76,12 +89,16 @@ const siteConfig = {
   copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
 
   highlight: {
-    // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    // default, Highlight.js theme to use for syntax highlighting in code blocks.
+    theme: 'solarized-dark',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    baseUrl + 'js/codeblocks.js',
+    baseUrl + 'js/tabs.js',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
