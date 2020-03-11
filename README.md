@@ -21,6 +21,7 @@ Edit the file `docusaurus-tutorial/website/siteConfig.js`
 website\siteConfig.js
 
 ```js
+
 const siteConfig = {
   title: 'Test Site', // Title for your website.
   tagline: 'A website for testing',
@@ -30,6 +31,7 @@ const siteConfig = {
   // Used for publishing and more
   projectName: 'react-native-docs',
   organizationName: 'jacobhsu',
+
 ```
 
 `$ GIT_USER=jacobhsu CURRENT_BRANCH=master USE_SSH=true yarn run publish-gh-pages`  
@@ -46,6 +48,27 @@ const siteConfig = {
 ```
 
 website\static\css\syntax.css
+
+## siteConfig.js
+
+[markdownPlugins](https://docusaurus.io/docs/zh-CN/site-config#markdownplugins-array) [array]
+
+```js
+const RemarkablePlugins = require('./core/RemarkablePlugins');
+
+  markdownPlugins: [
+    RemarkablePlugins.SnackPlayer,
+    RemarkablePlugins.ReactNativeWebPlayer,
+  ],
+
+  // Add custom scripts here that would be placed in <script> tags.
+  scripts: [
+    'https://snack.expo.io/embed.js',
+    ...
+  ],
+```
+
+`$ yarn add highlight.js remarkable`
 
 ## debug
 

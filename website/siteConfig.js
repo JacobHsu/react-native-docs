@@ -8,6 +8,8 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+const RemarkablePlugins = require('./core/RemarkablePlugins');
+
 // List of projects/orgs using your project for the users page.
 const users = [
   {
@@ -95,6 +97,7 @@ const siteConfig = {
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
+    'https://snack.expo.io/embed.js',
     'https://buttons.github.io/buttons.js',
     baseUrl + 'js/codeblocks.js',
     baseUrl + 'js/tabs.js',
@@ -108,6 +111,12 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
+
+  // RemarkablePlugins
+  markdownPlugins: [
+    RemarkablePlugins.SnackPlayer,
+    RemarkablePlugins.ReactNativeWebPlayer,
+  ],
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.

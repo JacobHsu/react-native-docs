@@ -13,5 +13,9 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.4"
+  },
+  "dependencies": {
+    "highlight.js": "^9.18.1",
+    "remarkable": "^2.0.0"
   }
 }
