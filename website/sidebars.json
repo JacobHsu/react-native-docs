@@ -2,7 +2,7 @@
   "docs": {
     "The Basics": [
       "getting-started",
-      "intro-react-native-components",
+      "tutorial",
       "intro-react",
       "handling-text-input",
       "using-a-scrollview",

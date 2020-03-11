@@ -1,5 +1,6 @@
 # react-native-docs
 
+The site and docs for React Native [https://reactnative.dev](https://reactnative.dev)  
 facebook/[react-native-website](https://github.com/facebook/react-native-website):https://reactnative.dev  
 [Docusaurus](https://docusaurus.io/en/) · Easy to Maintain Open Source Documentation
 
@@ -68,4 +69,17 @@ id: version-0.61-getting-started
 title: Getting Started
 original_id: getting-started
 ---
+```
+
+### CSS
+
+static\css\react-native.css
+
+連結淡藍樣式
+
+```js
+li a {
+  background-color: rgba(187, 239, 253, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
 ```
